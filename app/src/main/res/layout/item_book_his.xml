@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_cream_nostroke"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/imvBookimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_cream_nostroke"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nail1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBookid"
+        style="@style/fontInter12Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Mã đơn hàng: 170625OD0001"
+        app:layout_constraintStart_toEndOf="@+id/imvBookimage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBookdate"
+        style="@style/fontInter12Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Ngày: 20/06/2025"
+        app:layout_constraintStart_toEndOf="@+id/imvBookimage"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookid" />
+
+    <TextView
+        android:id="@+id/txtBookitemstarttime"
+        style="@style/fontInter12Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Giờ bắt đầu: 9:00"
+        app:layout_constraintStart_toEndOf="@+id/imvBookimage"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookdate" />
+
+    <Button
+        android:id="@+id/btnView"
+        style="@style/ButtonCustomSmall"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="XEM"
+        app:layout_constraintStart_toEndOf="@+id/imvBookimage"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookitemstarttime" />
+    <Button
+        android:id="@+id/btnView2"
+        style="@style/ButtonCustomSmall"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:text="XEM"
+        app:layout_constraintStart_toEndOf="@+id/imvBookimage"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookitemstarttime" />
+
+    <LinearLayout
+        android:id="@+id/uncompletedbook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/btnView"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookitemstarttime">
+
+        <Button
+            android:id="@+id/btnChangebook"
+            style="@style/ButtonCustomSmall"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="ĐỔI" />
+
+        <Button
+            android:id="@+id/btnCancelbook"
+            style="@style/ButtonCustomSmall"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:text="HỦY" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFeedback"
+        style="@style/ButtonCustomSmall"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="ĐÁNH GIÁ"
+        app:layout_constraintStart_toEndOf="@+id/btnView"
+        app:layout_constraintTop_toBottomOf="@+id/txtBookitemstarttime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/button_social_bg"
+    android:padding="5dp"
+    android:gravity="center"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:src="@drawable/ic_facebook"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:id="@+id/txtSocialName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FACEBOOK"
+        style="@style/fontMont16Bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="5dp"/>
+    <!--    <com.google.android.gms.common.SignInButton-->
+    <!--        android:id="@+id/btnGoogle"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content" />-->
+</LinearLayout>

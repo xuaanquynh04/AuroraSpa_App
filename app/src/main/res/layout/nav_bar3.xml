@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navbar3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cream"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:paddingHorizontal="5dp">
+
+    <LinearLayout
+        android:id="@+id/nav_tuvan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/nav_giohang"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/imgTuvan"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_consultant"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tư vấn"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            style="@style/fontInter12Reg"
+            android:id="@+id/txtTuvan"/>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/nav_giohang"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/nav_tuvan"
+        app:layout_constraintEnd_toStartOf="@id/nav_datlich"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imgGiohang"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_cart2"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giỏ hàng"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            style="@style/fontInter12Reg"
+            android:id="@+id/txtGiohang"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/nav_datlich"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/nav_giohang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread_inside">
+
+
+        <Button
+            android:id="@+id/btnDatLich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐẶT LỊCH NGAY"
+            style="@style/ButtonCustom"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

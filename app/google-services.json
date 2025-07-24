@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "624452000827",
+    "project_id": "auroraspa-faea5",
+    "storage_bucket": "auroraspa-faea5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624452000827:android:27f81be5d1b1745f7a901e",
+        "android_client_info": {
+          "package_name": "com.teamone.auroraspa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624452000827-4qjj4msdj63sctgtstpn48i1dusd1rrm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamone.auroraspa",
+            "certificate_hash": "518ff0508a708adf46fe10ebc6367f77bf70fc04"
+          }
+        },
+        {
+          "client_id": "624452000827-62k473i3ahot868cdbcmac2ogvg7lnis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamone.auroraspa",
+            "certificate_hash": "c1666bde18d853931cf81af3b8d048f297cb0fbd"
+          }
+        },
+        {
+          "client_id": "624452000827-afvkci5olg0uodtoij7365smn19vaadr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamone.auroraspa",
+            "certificate_hash": "8ec7251fa9a8bea7283094ccf62592ac4835599e"
+          }
+        },
+        {
+          "client_id": "624452000827-gpvq4r6hgm1vnksc0iet7cachhqdm3fr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamone.auroraspa",
+            "certificate_hash": "d58de36f62e6fa3304c00dc557b5fdecca8af3d7"
+          }
+        },
+        {
+          "client_id": "624452000827-dvv5tfcvdar4pv72ous8vt5j5jv1ci06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPgXA6YDeuvq69G0UNSgKMvYiJrWGvw5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624452000827-dvv5tfcvdar4pv72ous8vt5j5jv1ci06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

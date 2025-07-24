@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ResultNailFragment">
+
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:id="@+id/imvNailPhoto"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/nail1"/>
+
+        <TextView
+            android:id="@+id/txtNailName"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imvNailPhoto"
+            style="@style/fontMont12Bold"
+            android:background="@color/orange"
+            android:textColor="@color/cream"
+            android:gravity="center"
+            android:text="Đêm Kiên Định"/>
+        <TextView
+            android:id="@+id/txtNailDescription"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNailName"
+            style="@style/fontInter12Reg"
+            android:background="@color/cream"
+            android:padding="20dp"
+            android:text="Đêm Kiên Định - vẻ đẹp huyền bí tựa màn đêm sâu thẳm, lấp lánh lời hứa không phai. Sắc trầm ấm cùng điểm nhấn tinh tế gợi nét quyến rũ nội lực, một tuyên ngôn thầm lặng về sự bền bỉ và vẻ đẹp vượt thời gian."/>
+        <Button
+            android:id="@+id/btnViewNailDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonCustom"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNailDescription"
+            android:text="NHẤN VÀO ĐỂ XEM CHI TIẾT"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

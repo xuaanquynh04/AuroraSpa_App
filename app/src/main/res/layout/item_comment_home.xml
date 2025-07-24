@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/cream"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginTop="4dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+       >
+        <TextView
+            android:id="@+id/txtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            style="@style/fontMont12Bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+        <RatingBar
+            android:id="@+id/rbRate"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            app:layout_constraintTop_toBottomOf="@id/txtUsername"
+            android:rating="4.5"
+            android:numStars="5"
+            android:stepSize="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtComment"
+            android:foregroundGravity="right"
+            android:layout_marginStart="0dp"
+            android:backgroundTint="#18CECECE"
+            android:progressTint="#FFE907"
+            android:secondaryProgressTint="#FFE907"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:maxLines="3"
+            android:id="@+id/txtComment"
+            android:text="Dịch v tại Aurora Spa rất tuyệt vời, tôi sẽ quay lại vào lần sau cùng bạn bè của mình"
+            android:ellipsize="end"
+            style="@style/fontInter12Med"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtDate"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:text="12/6/2025"
+            style="@style/fontInter12Reg"
+            android:gravity="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

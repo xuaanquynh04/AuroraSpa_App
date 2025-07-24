@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/CheckboxCustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Bầu"
+        android:padding="0dp"
+        android:minHeight="0dp"
+        android:minWidth="0dp" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/addPrice"
+        style="@style/fontInter12Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+20.000"
+        android:paddingEnd="5dp"/>
+
+</LinearLayout>

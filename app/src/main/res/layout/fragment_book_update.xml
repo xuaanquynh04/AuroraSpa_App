@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookUpdateFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <!-- THÔNG TIN KHÁCH HÀNG -->
+            <TableLayout
+                android:id="@+id/customerInfoContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_cream_nostroke"
+                android:padding="16dp"
+                android:stretchColumns="1">
+
+
+                <TableRow>
+                    <TextView
+                        style="@style/fontInter12Bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="2"
+                        android:gravity="start"
+                        android:paddingBottom="8dp"
+                        android:text="Thông tin khách hàng"
+                        android:textColor="@color/green"
+                        android:drawableEnd="@drawable/ic_edit"/>
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvLabelName"
+                        style="@style/fontInter12Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Họ tên:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/customerName"
+                        style="@style/fontInter12Reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="10dp"
+                        android:text="Lê Nguyễn Ngọc Linh"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/tvLabelPhone"
+                        style="@style/fontInter12Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Số điện thoại:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/customerPhone"
+                        style="@style/fontInter12Reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="10dp"
+                        android:text="0938815376"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+
+                <TableRow
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/tvLabelEmail"
+                        style="@style/fontInter12Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:"
+                        android:textColor="@color/black" />
+                    <TextView
+                        android:id="@+id/customerEmail"
+                        style="@style/fontInter12Reg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="10dp"
+                        android:text="linhlenngoc@gmail.com"
+                        android:textColor="@color/black" />
+                </TableRow>
+            </TableLayout>
+
+
+            <!-- NGÀY ĐẶT LỊCH -->
+            <LinearLayout
+                android:id="@+id/datePickerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_cream_nostroke"
+                android:padding="20dp"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/imgCalendarpicker"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_calendar_picker" />
+
+
+                <TextView
+                    android:id="@+id/tvLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text="Ngày đặt lịch"
+                    android:textColor="@color/green"
+                    style="@style/fontInter12Bold" />
+
+
+                <TextView
+                    android:id="@+id/tvStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:text="*"
+                    android:textColor="#F44336"
+                    style="@style/fontInter12Bold" />
+
+
+                <TextView
+                    android:id="@+id/txtSelectedDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:text=""
+                    style="@style/fontInter12Reg" />
+            </LinearLayout>
+
+
+            <!-- DANH SÁCH DỊCH VỤ -->
+            <LinearLayout
+                android:id="@+id/serviceListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_cream_nostroke"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <TextView
+                    style="@style/fontInter12Bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dịch vụ"
+                    android:textColor="@color/green" />
+
+
+                <ListView
+                    android:id="@+id/lvbooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="247dp"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="1dp" />
+            </LinearLayout>
+
+
+            <!-- BUTTON XÁC NHẬN -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical|end"
+                android:orientation="horizontal"
+                android:id="@+id/containerConfirm">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:background="@drawable/bg_cream_nostroke"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp">
+
+
+                    <TextView
+                        style="@style/fontMont16Bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TỔNG"
+                        android:textColor="@color/orange" />
+
+
+                    <TextView
+                        android:id="@+id/totalAmount"
+                        style="@style/fontMont16Bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="699.000"
+                        android:textColor="@color/orange" />
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnConfirm"
+                    style="@style/ButtonCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XÁC NHẬN"
+                    android:layout_marginStart="10dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp">
+    <ImageView
+        android:id="@+id/imvServicePhoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_cream_nostroke"
+        android:clipToOutline="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/nail1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtServiceName"
+        style="@style/fontInter12Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:text="Tên dịch vụ đã sử dụng"
+        app:layout_constraintStart_toEndOf="@+id/imvServicePhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtServicePrice"
+        style="@style/fontInter12Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:text="99.000đ"
+        android:textColor="@color/red"
+        app:layout_constraintStart_toEndOf="@+id/imvServicePhoto"
+        app:layout_constraintTop_toBottomOf="@+id/txtServiceName" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginStart="90dp"
+        android:numStars="5"
+        android:progressTint="@color/orange"
+        android:rating="5"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:secondaryProgressTint="@color/cream"
+        android:stepSize="1"
+        app:layout_constraintBottom_toTopOf="@+id/txtLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtServicePrice"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtLabel"
+        style="@style/fontInter12Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Nội dung đánh giá"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvServicePhoto" />
+
+    <EditText
+        android:id="@+id/edtFeedbackContent"
+        style="@style/fontInter12Reg"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_cream_stroke"
+        android:hint="Nhập đánh giá"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txtLabel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="4dp"
+    android:layout_marginEnd="4dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            android:id="@+id/imvThumb"
+            android:src="@drawable/nail1"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            style="@style/fontInter12Med"
+            android:text="Nail lấp lánh màu hồng hot trend 2025"
+            app:layout_constraintTop_toBottomOf="@+id/imvThumb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="2"/>
+        <TextView
+            android:id="@+id/txtRealPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="99.000"
+            android:textColor="#FF0000"
+            style="@style/fontMont16Bold"
+            app:layout_constraintTop_toBottomOf="@id/txtName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/txtOldPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/fontMont12Reg"
+            android:text="100.000"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/txtRealPrice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

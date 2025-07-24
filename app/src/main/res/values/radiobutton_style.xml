@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RadioButtonCustom" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/radiobutton_custom</item>
+        <item name="buttonTint">@null</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:minWidth">48dp</item>
+        <item name="android:minHeight">15dp</item>
+    </style>
+</resources>

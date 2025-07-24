@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Nail ánh hồng dạ tiệc"
+        android:textColor="@color/green"
+        style="@style/fontInter12Bold"
+        app:layout_constraintStart_toEndOf="@id/productImage"
+        app:layout_constraintTop_toTopOf="@id/productImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="200.000đ"
+        android:textColor="@color/black"
+        style="@style/fontInter12Reg"
+        app:layout_constraintStart_toStartOf="@id/productName"
+        app:layout_constraintTop_toBottomOf="@id/productName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/productTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Giờ bắt đầu:"
+        android:textColor="@color/black"
+        style="@style/fontInter12Reg"
+        app:layout_constraintStart_toStartOf="@id/productPrice"
+        app:layout_constraintTop_toBottomOf="@id/productPrice"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnChooseTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHỌN GIỜ"
+        style="@style/ButtonCustomSmall"
+        app:layout_constraintStart_toStartOf="@id/productTime"
+        app:layout_constraintTop_toBottomOf="@id/productTime"
+        app:layout_constraintBottom_toBottomOf="@id/productImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

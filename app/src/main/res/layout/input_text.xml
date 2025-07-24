@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtLabel"
+            style="@style/fontInter12Med"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email/ số điện thoại"
+            android:textColor="@color/black" />
+
+        <TextView
+            style="@style/fontInter12Reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:textColor="#FF0000" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txtInput"
+        style="@style/fontInter12Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cream_stroke"
+        android:hint="Nhập họ và tên"
+        android:padding="10dp"
+        android:textColor="@color/black" />
+        
+    <TextView
+        android:id="@+id/txtError"
+        style="@style/fontInter12Reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_marginTop="4dp" />
+</LinearLayout>

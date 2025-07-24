@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HÃY TRỞ THÀNH THÀNH VIÊN CỦA AURORASPA"
+            style="@style/fontMont16Bold"
+            android:gravity="center"
+            android:textColor="@color/green"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <ImageView
+            android:background="@drawable/bg_cream_nostroke"
+            android:id="@+id/imageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/logo_aurora"
+            app:layout_constraintTop_toBottomOf="@id/txtTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView">
+
+
+            <include
+                android:id="@+id/inputName"
+                layout="@layout/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp" />
+
+
+            <include
+                android:id="@+id/inputEmail"
+                layout="@layout/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+
+            <include
+                android:id="@+id/inputPhone"
+                layout="@layout/input_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/txtLabel"
+                    style="@style/fontInter12Med"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textColor="@color/black" />
+
+
+                <TextView
+                    style="@style/fontInter12Reg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="#FF0000" />
+            </LinearLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radioGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/cbMale"
+                    style="@style/RadioButtonCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:text="Nam" />
+
+
+                <CheckBox
+                    android:id="@+id/cbFemale"
+                    style="@style/RadioButtonCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="50dp"
+                    android:text="Nữ" />
+
+
+                <CheckBox
+                    android:id="@+id/cbOther"
+                    style="@style/RadioButtonCustom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khác" />
+
+
+            </RadioGroup>
+
+
+            <include
+                android:id="@+id/inputDob"
+                layout="@layout/input_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <com.teamone.views.Input_Password
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+
+
+            <com.teamone.views.Input_Password
+                android:id="@+id/inputConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/btnSignUp"
+                style="@style/ButtonCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Đăng ký" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hoặc đăng ký bằng"
+                style="@style/fontInter12Reg"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/anotherMethod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSignUp">
+
+
+                <include
+                    android:id="@+id/btnFacebook"
+                    layout="@layout/button_facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+                <Space
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content" />
+                <com.teamone.views.Button_Google
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"/>
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đã có tài khoản?"
+                style="@style/fontInter12Reg"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:id="@+id/btnSignIn"
+                style="@style/ButtonCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Đăng nhập" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

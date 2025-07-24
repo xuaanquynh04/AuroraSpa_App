@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/green"
+    android:layout_weight="10"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_arrowback"
+        android:id="@+id/btnBack"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/input_background"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="10dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/txtInput"
+            style="@style/fontInter12Reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:textColor="@color/black"
+            android:background="@color/cream"
+            android:dropDownHeight="wrap_content"
+            android:dropDownVerticalOffset="10dp" />
+        <ImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_search"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_cart"
+        android:id="@+id/btnCart"/>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_notify"/>
+</LinearLayout>

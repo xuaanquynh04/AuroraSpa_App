@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/nail1"
+        android:scaleType="centerCrop"
+        android:id="@+id/imvThumb" />
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        style="@style/fontMont12Bold"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Cách chăm sóc móng để giữ form trong vòng 4 tuần"
+        android:id="@+id/txtTitle"/>
+
+</LinearLayout>

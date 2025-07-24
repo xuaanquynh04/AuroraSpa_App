@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RecNailFragment">
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_cream_nostroke"
+        android:layout_marginTop="250dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="30dp">
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/slogan_bg"
+            android:text="NHẬP NGÀY SINH - NHẬN NAIL XINH"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/row2"
+            android:layout_marginTop="10dp"
+            style="@style/fontMont16Bold"
+            android:textColor="@color/orange"
+            android:gravity="center"
+            android:padding="2dp"/>
+        <LinearLayout
+            android:id="@+id/datePickerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:padding="10dp"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/bg_cream_stroke">
+
+            <ImageView
+                android:id="@+id/imgCalendarpicker"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_calendar_picker" />
+
+            <TextView
+                android:id="@+id/txtSelectedDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:text=""
+                style="@style/fontInter12Reg" />
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/ButtonCustom"
+            android:text="GỢI Ý"
+            android:id="@+id/btnSuggest"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
